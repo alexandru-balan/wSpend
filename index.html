@@ -77,16 +77,12 @@
 
 <script src="Front_End/js/jquery.mobile.custom.js"></script>
 <script>
-    $(function() {
-        $("#carouselBanner").swipe({
-            swipeRight: function() {
-                $(this).carousel('prev')
-            },
-            swipeLeft: function() {
-                $(this).carousel('next')
-            }
-        });
-    })
+    $(".carousel").swiperight(function() {
+        $(this).carousel('prev');
+    });
+    $(".carousel").swipeleft(function() {
+        $(this).carousel('next');
+    });
 </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

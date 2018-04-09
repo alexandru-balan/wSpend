@@ -71,3 +71,9 @@
 .carousel-caption h4 {
     font-weight: bold;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 2.7rem;
+  width: 2.7rem;
+}

@@ -37,17 +37,55 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item" id="login-item">
-                        <a href="#" class="nav-link" id="login">LogIn</a>
+                        <a href="#" class="nav-link" id="login" data-toggle="modal" data-target="#loginModal">LogIn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="separator">||</a>
                     </li>
                     <li class="nav-item" id="signup-item">
-                        <a href="#" class="nav-link" id="signup">SignUp</a>
+                        <a href="#" class="nav-link" id="signup" data-toggle="modal" data-target="#signupModal">SignUp</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Welcome back!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Sign up for free</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>

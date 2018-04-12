@@ -118,3 +118,9 @@
     border-radius: 15px;
     object-fit: cover;
 }
+
+.modal-header h5{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}

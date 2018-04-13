@@ -58,18 +58,26 @@
                             <span aria-hidden="true">&times;</span>
                     </div>
                     <div class="modal-body">
-                      
+                        <form action="#">
+                            <div class="row mr-auto ml-auto">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="row mr-auto ml-auto">
+                                <input type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a class="mr-auto" href="#signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
+                        <a id="forgot" href="#">Forgot your password?</a>
                         <button type="button" class="btn btn-primary">Log In</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalTitle">Sign up for free</h5>
@@ -77,10 +85,25 @@
                             <span aria-hidden="true">&times;</span>
                     </div>
                     <div class="modal-body">
-                      
+                        <form action="#">
+                            <div class="row mr-auto ml-auto sign-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="row sign-row2 ml-auto mr-auto">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="row sign-row2 ml-auto mr-auto">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="#login" class="mr-auto" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in instead</a>
                         <button type="button" class="btn btn-primary">Sign Up</button>
                     </div>
                 </div>

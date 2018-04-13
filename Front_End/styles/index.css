@@ -124,3 +124,21 @@
     left: 50%;
     transform: translate(-50%);
 }
+
+#forgot{
+    font-size: .9rem;
+    color: #00695C;
+}
+
+.row{
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.sign-row{
+    width: 100%;
+}
+
+.sign-row2{
+    width: 80%;
+}

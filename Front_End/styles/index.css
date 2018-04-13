@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .navbar {
-    position: sticky;
+    background-color: #FAFAFA;
 }
 
 .navbar-brand {

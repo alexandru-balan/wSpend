@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .navbar {
-    position: sticky;
+    background-color: #FAFAFA;
 }
 
 .navbar-brand {
@@ -70,4 +70,75 @@
 
 .carousel-caption h4 {
     font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+#separataor:hover{
+    color:  #00695C;
+}
+
+#separator:hover:before{
+    display: none;
+}
+
+#separator{
+    padding-left: 0;
+    padding-right: 6.4px; /*This is the default padding of the nav-item. I added this just so it is symetrical*/
+}
+
+#login-item{
+    padding-right: 0;
+}
+
+#signup-item{
+    padding-left: 0;
+}
+
+#login, #signup{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.card-deck{
+    margin: 2.5rem 4rem 2.5rem 4rem; 
+}
+
+.card{
+    border-radius: 15px;
+    border-color: #00695C;
+    border: 0px;
+}
+
+.card img{
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.modal-header h5{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#forgot{
+    font-size: .9rem;
+    color: #00695C;
+}
+
+.row{
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.sign-row{
+    width: 100%;
+}
+
+.sign-row2{
+    width: 80%;
 }

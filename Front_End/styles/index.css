@@ -151,11 +151,63 @@
     }
 }
 
-@media only screen and (min-width: 1800px){
+
+/*
+Resizing elements for 4k screens
+*/
+
+@media only screen and (min-width: 2000px){
     .carousel-caption p{
         font-size: calc(12px + 0.8vw);
     }
     .carousel-caption h4{
         font-size: calc(14px + 0.9vw);
     }
+
+    .navbar{
+        width: 100vw;
+        height: 5vh;
+    }
+
+    .nav-link{
+        font-size: calc(12px + 0.5vw);
+    }
+
+    .navbar-brand{
+        font-size: calc(16px + 0.5vw);
+    }
+
+    .card-title{
+        font-size: calc(14px + 0.4vw);
+    }
+
+    .card-text{
+        font-size: calc(10px + 0.4vw);
+    }
+
+    .modal-dialog-centered, .modal-dialog{
+        max-width: 35vw;
+        max-height: 40vh;
+    }
+
+    .modal-title{
+        font-size: calc(20px + 0.5vw);
+    }
+
+    .modal-body input{
+        font-size: calc(16px + 0.5vw);
+    }
+
+    .modal-footer a{
+        font-size: calc(15px + 0.4vw);
+    }
+
+    #forgot{
+        font-size: calc(12px + 0.3vw);
+    }
+
+    .modal-footer button{
+        font-size: calc(15px + 0.5vw);
+    }
+
 }

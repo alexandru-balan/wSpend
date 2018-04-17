@@ -10,6 +10,7 @@
     <link rel="icon" href="Front_End/res/icons/logo.png">
     <link rel="stylesheet" href="Front_End/styles/index.css">
     <link rel="stylesheet" href="Front_End/styles/master.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 </head>
 
 <body>
@@ -58,21 +59,22 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                     </div>
-                    <div class="modal-body">
-                        <form action="#">
+                    <form action="#" id="logForm" method="post">
+                        <div class="modal-body">
+
                             <div class="row mr-auto ml-auto">
                                 <input type="email" class="form-control" placeholder="Email" required>
                             </div>
                             <div class="row mr-auto ml-auto">
                                 <input type="password" class="form-control" placeholder="Password" required>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a class="mr-auto" href="#signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
-                        <a id="forgot" href="#">Forgot your password?</a>
-                        <button type="button" class="btn btn-primary">Log In</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="mr-auto" href="#signup" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
+                            <a id="forgot" href="#">Forgot your password?</a>
+                            <button type="submit" class="btn btn-primary">Log In</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -85,8 +87,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                     </div>
-                    <div class="modal-body">
-                        <form action="#">
+                    <form action="#" id="signForm" method="POST">
+                        <div class="modal-body">
+
                             <div class="row mr-auto ml-auto sign-row">
                                 <div class="col">
                                     <input type="text" class="form-control" placeholder="First Name" required>
@@ -101,12 +104,12 @@
                             <div class="row sign-row2 ml-auto mr-auto">
                                 <input type="password" class="form-control" placeholder="Password" required>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#login" class="mr-auto" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in instead</a>
-                        <button type="button" class="btn btn-primary">Sign Up</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#login" class="mr-auto" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log in instead</a>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -159,14 +162,16 @@
                 <img class="card-img-top" src="Front_End/res/photos/index/glance.jpg">
                 <div class="card-body">
                     <h5 class="card-title">At a glance statistics</h5>
-                    <p class="card-text">We provide you with all the data you need at a glance so you can check your current status faster and takecare of what really matters to you.</p>
+                    <p class="card-text">We provide you with all the data you need at a glance so you can check your current status faster and
+                        takecare of what really matters to you.</p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="Front_End/res/photos/index/family.jpeg">
                 <div class="card-body">
                     <h5 class="card-title">More time & money</h5>
-                    <p class="card-text">We know that money is a very powerful force nowadays, but there are things in life not even money can buy. We make sure you have the money! You make sure to live your life at the fullest!</p>
+                    <p class="card-text">We know that money is a very powerful force nowadays, but there are things in life not even money can
+                        buy. We make sure you have the money! You make sure to live your life at the fullest!</p>
                     <p class="card-text">
                         <small class="text-muted">with our new smart tips on how to save money</small>
                     </p>
@@ -200,24 +205,27 @@
     </main>
 
     <!--Scripts part-->
-    <script src="Front_End/js/jquery.mobile.custom.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".carousel-inner").swiperight(function () {
-                $(this).parent().carousel('prev');
-            });
-            $(".carousel-inner").swipeleft(function () {
-                $(this).parent().carousel('next');
-            });
-        });  
-    </script>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script>
+        (function () {
+            ('#logForm').on('submit', function (e) {
+                e.preventDefault();
+                post('C:\Users\balan\Documents\GitHub\wSpend\post.txt',
+                    ('#logForm').serialize(),
+                );
+            });
+        });
+    </script>
+
 </body>
 
 </html>

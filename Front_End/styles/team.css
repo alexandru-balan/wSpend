@@ -1,0 +1,6 @@
+img{
+    width: 20vw;
+    height: 20vh;
+    left: 50%;
+    transform: translate(-50%);
+}

@@ -8,3 +8,88 @@
 body {
     background-color: #FAFAFA;
 }
+
+.navbar {
+    background-color: #FAFAFA;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #009688;
+    padding-left: .4em;
+    font-weight: 600;
+    font-family: Lora;
+}
+
+.navbar-brand:hover {
+    color: #009688;
+}
+
+.navbar-nav {
+    padding-right: .6em;
+}
+
+
+.nav-item {
+    padding-left: .4em;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: #00695C;
+    position: relative;
+    font-family: Raleway;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    left: 25%;
+    align-self: center;
+    background-color: #00BFA5;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: #00BFA5;
+}
+
+.modal-header h5{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#forgot{
+    font-size: .9rem;
+    color: #00695C;
+}
+
+.row{
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.sign-row{
+    width: 100%;
+}
+
+.sign-row2{
+    width: 80%;
+}
+
+.socialMedia{
+    width: 100%;
+}
+
+.socialMedia button{
+    width: 100%;
+}

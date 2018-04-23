@@ -79,32 +79,6 @@
   width: 2.2rem;
 }
 
-#separataor:hover{
-    color:  #00695C;
-}
-
-#separator:hover:before{
-    display: none;
-}
-
-#separator{
-    padding-left: 0;
-    padding-right: 6.4px; /*This is the default padding of the nav-item. I added this just so it is symetrical*/
-}
-
-#login-item{
-    padding-right: 0;
-}
-
-#signup-item{
-    padding-left: 0;
-}
-
-#login, #signup{
-    padding-right: 0;
-    padding-left: 0;
-}
-
 .card-deck{
     margin: 2.5rem 4rem 2.5rem 4rem; 
 }

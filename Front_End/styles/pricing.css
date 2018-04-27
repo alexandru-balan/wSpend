@@ -1,7 +1,7 @@
 
 .title{
     color: white;
-    padding: 2rem1
+    padding: 1rem;
 }
 
 .subtitle{
@@ -9,7 +9,7 @@
     color: whitesmoke;
 }
 
-.col{
+main .col{
     margin-top: 10vh;
     color: #009688;
     font-weight: bolder;

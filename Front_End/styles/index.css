@@ -16,12 +16,12 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 2.2rem;
-  width: 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
 }
 
 .card-deck{
-    margin: 2.5rem 4rem 2.5rem 4rem; 
+    margin: 2.5rem 4rem 2.5rem 4rem;
 }
 
 .card{
@@ -42,5 +42,3 @@
         height: 35vh;
     }
 }
-
-

@@ -58,13 +58,15 @@ main .col{
 }
 
 @media only screen and (max-width: 1100px) {
-main .row{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+    main .row{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: block;
+    }
 
-  main .col{
-    margin-left: auto;
-    margin-right: auto;
-  }
+    main .col{
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }

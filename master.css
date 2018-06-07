@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.navbar {
+    background-color: #FAFAFA;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #009688;
+    padding-left: .4em;
+    font-weight: 600;
+    font-family: Lora;
+}
+
+.navbar-brand:hover {
+    color: #009688;
+}
+
+.navbar-nav {
+    padding-right: .6em;
+}
+
+
+.nav-item {
+    padding-left: .4em;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: #00695C;
+    position: relative;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    left: 25%;
+    align-self: center;
+    background-color: #00BFA5;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: #00BFA5;
+}
+
+.modal-header h5{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#forgot{
+    font-size: .9rem;
+    color: #00695C;
+}
+
+.row{
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.sign-row{
+    width: 100%;
+}
+
+.sign-row2{
+    width: 80%;
+}
+
+.socialMedia{
+    width: 100%;
+}
+
+.socialMedia button{
+    width: 100%;
+}
+
+/*
+Resizing elements for 4k screens
+*/
+
+@media only screen and (min-width: 2000px){
+    .carousel-caption p{
+        font-size: calc(12px + 0.8vw);
+    }
+    .carousel-caption h4{
+        font-size: calc(14px + 0.9vw);
+    }
+
+    .navbar{
+        width: 100vw;
+        height: 5vh;
+    }
+
+    .nav-link{
+        font-size: calc(12px + 0.5vw);
+    }
+
+    .navbar-brand{
+        font-size: calc(16px + 0.5vw);
+    }
+
+    .card-title{
+        font-size: calc(14px + 0.4vw);
+    }
+
+    .card-text{
+        font-size: calc(10px + 0.4vw);
+    }
+
+    .modal-dialog-centered, .modal-dialog{
+        max-width: 35vw;
+        max-height: 40vh;
+    }
+
+    .modal-title{
+        font-size: calc(20px + 0.5vw);
+    }
+
+    .modal-body input{
+        font-size: calc(16px + 0.5vw);
+    }
+
+    .modal-footer a{
+        font-size: calc(15px + 0.4vw);
+    }
+
+    #forgot{
+        font-size: calc(12px + 0.3vw);
+    }
+
+    .modal-footer button{
+        font-size: calc(15px + 0.5vw);
+    }
+
+}

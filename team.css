@@ -1,0 +1,36 @@
+body{
+  background-color: white;
+}
+
+.banner{
+  max-width: 100vw;
+  margin-top: 1rem;
+}
+
+.banner img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.col p,li{
+  color: #009688;
+  font-weight: 500;
+}
+
+.col ul{
+  list-style: square;
+}

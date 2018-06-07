@@ -1,0 +1,40 @@
+#container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    background-image: url("configback.jpg");
+    background-repeat: no-repeat;
+}
+
+#incomes{
+    width: 32%;
+    height: 550px;
+    position: absolute;
+    background-color: rgba(1, 46, 194, 0.4);
+    top: 10px;
+    left: 10px;
+    padding-top: 10px;
+}
+
+#expenses{
+    width: 32%;
+    height: 550px;
+    position: absolute;
+    background-color: rgba(207, 5, 5, 0.4);
+    top: 10px;
+    left: 465px;
+    padding-top: 10px;
+}
+
+#savings{
+    width: 32%;
+    height: 550px;
+    position: absolute;
+    background-color: rgba(224, 142, 19, 0.4);
+    top: 10px;
+    left: 920px;
+    padding-top: 10px;
+}
+

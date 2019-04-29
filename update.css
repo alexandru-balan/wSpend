@@ -1,0 +1,17 @@
+#container{
+    height: auto;
+    color: white; 
+    backgroud-color : black;
+}
+
+#incomes{
+	height : auto;
+}
+
+#expenses{
+	height : auto;
+}
+
+#savings{
+	height: auto;
+}
